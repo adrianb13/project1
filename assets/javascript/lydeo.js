@@ -32,7 +32,7 @@ function songSearch() {
                 $("#results").append(newVid);
 
         }
-        
+//https://youtube-nocookie.com/embed+videoid       
         $(".vid-results").on("click", function () {
             $("#video").empty();
             //var songTitle = $(this).attr("title");
