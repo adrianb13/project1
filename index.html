@@ -5,12 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
- -->    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
 </head>
-<body>
+<body class="background">
+    <input id="userState" placeholder="State Name, ex: California"><input type="submit" value="Find" id="find"></input>
+    <br>
 
-    <div id="results"></div>
+    <div class="outline"> 
+        <p class="bold">Your Senators</p>
+        <div class="photoBox" id="box1">
+            <div class="nameSpace" id="name1"></div>
+            <div id="result1"></div>
+        </div>
+        <div class="photoBox" id="box2">
+            <div class="nameSpace" id="name2"></div>
+            <div id="result2"></div>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div>
+
     <table id="infoTable">
         <thead>
             <tr>
@@ -18,16 +33,16 @@
                 <th>Political Party</th>
                 <th>Office Address</th>
                 <th>Phone Number</th>
-                <th>Website</th>
             </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
+    
     <div id="copyright"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="senate.js"></script>
+    <script src="assets/javascript/senate.js"></script>
 
 </body>
 </html>

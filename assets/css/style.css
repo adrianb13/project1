@@ -1,0 +1,63 @@
+p {
+    margin: 10px;
+}
+table {
+    background-color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto 20px auto;
+}
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0px;
+}
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+    .background {
+        background: url("../images/USFlag.png");
+        background-size: 100% auto;
+    }
+    .outline {
+        background-color: lightgray;
+        margin: 10px auto 10px auto;
+        border: 3px solid black;
+        border-radius: 60px;
+        width: 625px;
+        height: 390px;
+    }
+    .bold {
+        font-size: 150%;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .photoBox {
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        background-color: lightgray;
+        margin: 5px 20px 5px 20px;
+        width: 270px;
+        height: 320px;
+    }
+    .floatLeft {
+        float: left;
+    }
+    .imageSpacing {
+        margin: 15px 20px 20px 20px;
+        
+    }
+    .red {
+        background-color: red;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .nameSpace {
+        margin: 5px;
+    }
