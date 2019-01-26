@@ -27,6 +27,7 @@ td {
         margin: 10px auto 10px auto;
         border: 3px solid black;
         border-radius: 60px;
+        max-width: 631px;
         width: 625px;
         height: 390px;
     }
@@ -64,8 +65,6 @@ td {
     .nameSpace {
         margin: 5px;
     }
-<<<<<<< Updated upstream
-=======
 header {
     display: block;
     background-color: navy;
@@ -86,6 +85,20 @@ h1 {
         padding: 10px;
         font-size: 20px;
     }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .instructions {
+    background-color: lightgray;
+    margin: 10px auto 10px auto;
+    border: 3px solid black;
+    border-radius: 60px;
+    max-width: 625px;
+    padding: 10px;
+    font-size: 20px;
+    }
 
     .user-input {
         margin-left: 375px;
@@ -103,4 +116,3 @@ footer {
     margin-top: 255px;
     color: white;
 }
->>>>>>> Stashed changes
