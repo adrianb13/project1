@@ -41,11 +41,13 @@
 
 =======
 <html>
+
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lydeo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< Updated upstream
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
     
 </head>
@@ -56,10 +58,63 @@
     <iframe framborder="0" id="video"></iframe>
     
     <div id="lyrics"></div>
+=======
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+</head>
+
+<body class="background">
+    <header>
+        <h1>Do you know you're Senator?</h1><br>
+    </header>
+
+    <div class="instructions">
+        <p>Enter your home state (or any state) to find out who your Senators are. 
+            Click on the Senator's name to learn their political party-line voting percentages,
+            in current congreess. Also the number of bills they have sponsored.  Are they working for you?  </p>
+        <div class="user-input">
+        <p class="input-heading">Search State</p>
+        <input id="userState" placeholder="State Name, ex: California">
+        <input type="submit" value="Find" id="find"></input>
+        </div>
+    </div>
+
+    <div class="outline">
+        <p class="bold">Your Senators</p>
+        <div class="photoBox" id="box1">
+            <div class="nameSpace" id="name1"></div>
+            <div id="result1"></div>
+        </div>
+        <div class="photoBox" id="box2">
+            <div class="nameSpace" id="name2"></div>
+            <div id="result2"></div>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <table id="infoTable">
+        <thead>
+
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <footer>
+            <p>Copyright (c) 2019 Pro Publica Inc. All Rights Reserved.</p>
+            <p>By Jameson Aardalen, Adrian Briones, Gina Washington</p>
+    </footer>
+>>>>>>> Stashed changes
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
     <script src="assets/javascript/lydeo.js"></script>
 </body>
+<<<<<<< Updated upstream
 >>>>>>> 8557273bbc69d10dac24ae3611c865b173c5a056
+=======
+
+>>>>>>> Stashed changes
 </html>

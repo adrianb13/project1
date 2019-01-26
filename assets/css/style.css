@@ -1,0 +1,106 @@
+<<<<<<< Updated upstream
+=======
+p {
+    margin: 10px;
+}
+table {
+    background-color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto 20px auto;
+}
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0px;
+}
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+    .background {
+        background: url("../images/USFlag.png");
+        background-size: 100% auto;
+    }
+    .outline {
+        background-color: lightgray;
+        margin: 10px auto 10px auto;
+        border: 3px solid black;
+        border-radius: 60px;
+        max-width: 631px;
+        height: 390px;
+    }
+    .boldHeader {
+        font-weight: bold;
+    }
+    .bold {
+        font-size: 150%;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .photoBox {
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        background-color: lightgray;
+        margin: 5px 20px 5px 20px;
+        width: 270px;
+        height: 320px;
+    }
+    .floatLeft {
+        float: left;
+    }
+    .imageSpacing {
+        margin: 15px 20px 20px 20px;
+        
+    }
+    .red {
+        background-color: red;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .nameSpace {
+        margin: 5px;
+    }
+    header {
+    display: block;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .instructions {
+    background-color: lightgray;
+    margin: 10px auto 10px auto;
+    border: 3px solid black;
+    border-radius: 60px;
+    max-width: 625px;
+    padding: 10px;
+    font-size: 20px;
+    }
+
+    .user-input {
+        margin-left: 375px;
+    }
+
+    .input-heading {
+        margin-bottom: 3px;
+        margin-left: 0px;
+    }
+
+    footer {
+        display: block;
+    background-color: navy;
+    text-align: center;
+    margin-top: 255px;
+    color: white;
+    }
+>>>>>>> Stashed changes
