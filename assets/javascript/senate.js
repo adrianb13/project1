@@ -4,6 +4,7 @@
 $(document).ready(function(){
 
     $("#find").on("click", function congressInfo () {
+        $("#infoTable > thead").empty();
         $("#infoTable > tbody").empty();
         $("#result1").empty();
         $("#result2").empty();
@@ -18,6 +19,15 @@ $(document).ready(function(){
             dataType: "json",
         }).then(function(response) {
             console.log(response);
+            var newHead = $("<tr>").append(
+                $("<th>").text("Name"),
+                $("<th>").text("Political Party"),
+                $("<th>").text("Mailing Address"),
+                $("<th>").text("Phone Number")
+            )
+                newHead.attr("class", "boldHeader")
+            $("#infoTable > thead").append(newHead)
+
             for (j = 2 ; j < 4; j++) {
             var name = response.officials[j].name;
             var party = response.officials[j].party;
@@ -33,8 +43,7 @@ $(document).ready(function(){
                 $("<td>").text(phone),
 //                $("<td>").text(url)
             );
-            
-            $("#infoTable > tbody").append(newRow)
+            $("#infoTable > tbody").append(newRow);
             }
 
         }).then(function(response) {
