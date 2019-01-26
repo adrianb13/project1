@@ -65,11 +65,25 @@ td {
     .nameSpace {
         margin: 5px;
     }
-    header {
+header {
     display: block;
     background-color: navy;
     color: white;
     padding: 10px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+    .instructions {
+        background-color: lightgray;
+        margin: 10px auto 10px auto;
+        border: 3px solid black;
+        border-radius: 60px;
+        max-width: 625px;
+        padding: 10px;
+        font-size: 20px;
     }
     h1 {
         font-size: 50px;
@@ -95,10 +109,10 @@ td {
         margin-left: 0px;
     }
 
-    footer {
-        display: block;
+footer {
+    display: block;
     background-color: navy;
     text-align: center;
     margin-top: 255px;
     color: white;
-    }
+}
