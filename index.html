@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lydeo</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
-<body>
+<body class="background">
+    <input id="userState" placeholder="State Name, ex: California"><input type="submit" value="Find" id="find"></input>
+    <br>
 
-    <div id="results"></div>
+    <div class="outline"> 
+        <p class="bold">Your Senators</p>
+        <div class="photoBox" id="box1">
+            <div class="nameSpace" id="name1"></div>
+            <div id="result1"></div>
+        </div>
+        <div class="photoBox" id="box2">
+            <div class="nameSpace" id="name2"></div>
+            <div id="result2"></div>
+        </div>
+    </div>
 
-    <iframe framborder="0" id="video"></iframe>
+    <div style="clear: both;"></div>
+
+    <table id="infoTable">
+        <thead>
+<!--             <tr>
+                <th>Name</th>
+                <th>Political Party</th>
+                <th>Office Address</th>
+                <th>Phone Number</th>
+            </tr>
+ -->        </thead>
+        <tbody>
+        </tbody>
+    </table>
     
-    <div id="lyrics"></div>
+    <div id="copyright"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
-    <script src="assets/javascript/lydeo.js"></script>
+    <script src="assets/javascript/senate.js"></script>
+
 </body>
 </html>
