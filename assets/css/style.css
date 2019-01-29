@@ -20,7 +20,7 @@ td {
 }
     .background {
         background: url("../images/USFlag.png");
-        background-size: 100% auto;
+        background-size: 100% 100%;
     }
     .outline {
         background-color: lightgray;
