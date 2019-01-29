@@ -13,17 +13,21 @@
 
 <body class="background">
     <header>
-        <h1>Do you know you're Senator?</h1><br>
+        <h1>Do You Know Your Senator?</h1><br>
     </header>
 
     <div class="instructions">
         <p>Enter your home state (or any state) to find out who your Senators are. 
             Click on the Senator's name to learn their political party-line voting percentages,
-            in current congreess. Also the number of bills they have sponsored.  Are they working for you?  </p>
+            in current congreess. Also the number of bills they have sponsored.  Are they working for you?  
+        </p>
+        
         <div class="user-input">
-        <p class="input-heading">Search State</p>
-        <input id="userState" placeholder="State Name, ex: California">
-        <input type="submit" value="Find" id="find"></input>
+            <p class="input-heading">Search State</p>
+        
+            <input id="userState" placeholder="State Name, ex: California">
+            <input type="submit" value="Find" id="find">
+            
         </div>
     </div>
 
@@ -52,5 +56,8 @@
             <p>Copyright (c) 2019 Pro Publica Inc. All Rights Reserved.</p>
             <p>By Jameson Aardalen, Adrian Briones, Gina Washington</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/senate.js"></script>
   </body>
 </html>
