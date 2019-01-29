@@ -10,6 +10,7 @@ $(document).ready(function(){
         $("#result2").empty();
         $("#name1").empty();
         $("#name2").empty();
+        
         var state = $("#userState").val().trim();
         var searchURL = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyConiWRnN46UCfMvBRUESD_MvTF2ucsnNE&address=" + state;
         
@@ -47,20 +48,37 @@ $(document).ready(function(){
             }
 
         }).then(function(response) {
-            var chamber = "senate"
-            var queryURL = "https://api.propublica.org/congress/v1/members/senate/" + state + "/current.json";
+            
+            if (state === "DC") {
+                var searchURL = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyConiWRnN46UCfMvBRUESD_MvTF2ucsnNE&address=district%20of%20columbia";
         
-            $.ajax({
-                url: queryURL,
-                method: "GET",
-                dataType: "json",
-                headers: {
-                    "X-API-Key": "t6ac8DG1Hig7X3Uc8v3D1mB8IzW0qvioY0J5ptln"
-                }
-            }).then(function(response) {
-                console.log(response);
-                console.log(response.copyright)
-//                $("#copyright").text(response.copyright)
+                $.ajax({
+                    url: searchURL,
+                    method: "GET",
+                    dataType: "json",
+                }).then(function(response) {
+                    console.log(response);
+                    for (k = 0; k < 2; k++) {
+                        var name = $("#name" + (k + 1));
+                            name.addClass("senID");
+                            $("#name" + (k + 1)).text(response.officials[k+2].name) 
+                        };        
+                });
+
+            } else {
+                var chamber = "senate"
+                var queryURL = "https://api.propublica.org/congress/v1/members/senate/" + state + "/current.json";
+        
+                $.ajax({
+                    url: queryURL,
+                    method: "GET",
+                    dataType: "json",
+                    headers: {
+                        "X-API-Key": "t6ac8DG1Hig7X3Uc8v3D1mB8IzW0qvioY0J5ptln"
+                    }
+                }).then(function(response) {
+                    console.log(response);
+                
                 for (i = 0; i < 2; i++) {
                     var name = $("#name" + (i + 1));
                         name.addClass("senID");
@@ -93,7 +111,8 @@ $(document).ready(function(){
                         $("#name2").text(name.attr("data-name"));
                     };
                 };
-            });
+                });
+            };
         });
 
         $("#userState").val("");
@@ -119,12 +138,14 @@ $(document).ready(function(){
             var billSponsor = response.results[0].roles[0].bills_sponsored;
             var billCoSponsor = response.results[0].roles[0].bills_cosponsored;
             var parVotingPercent = response.results[0].roles[0].votes_with_party_pct;
+            var missedVotesPercent = response.results[0].roles[0].missed_votes_pct;
 
             var newHeader = $("<tr>").append(
                 $("<th>").text("Name"),
                 $("<th>").text("# of Bills Sponsored"),
                 $("<th>").text("# of Bills Co-Sponsored"),
-                $("<th>").text("Votes with Party Lines Percentage")
+                $("<th>").text("Votes with Party Lines Percentage"),
+                $("<th>").text("Missed Votes Percentage")
             )
                 newHeader.attr("class", "boldHeader");
 
@@ -132,7 +153,8 @@ $(document).ready(function(){
                 $("<td>").text(senName),
                 $("<td>").text(billSponsor),
                 $("<td>").text(billCoSponsor),
-                $("<td>").text(parVotingPercent)
+                $("<td>").text(parVotingPercent),
+                $("<td>").text(missedVotesPercent)
             )
 
             $("#infoTable > thead").append(newHeader);
