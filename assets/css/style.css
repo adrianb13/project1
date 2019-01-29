@@ -108,6 +108,9 @@ h1 {
         margin-bottom: 3px;
         margin-left: 0px;
     }
+    .senID {
+        cursor: pointer;
+    }
 
 footer {
     display: block;
