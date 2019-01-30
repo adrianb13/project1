@@ -44,7 +44,6 @@ td {
         float: left;
         text-align: center;
         font-weight: bold;
-        background-color: lightgray;
         margin: 5px 20px 5px 20px;
         width: 270px;
         height: 320px;
@@ -110,6 +109,9 @@ h1 {
     }
     .senID {
         cursor: pointer;
+    }
+    .declaration {
+        background: url("../images/Declaration.png")
     }
 
 footer {
