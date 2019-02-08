@@ -1,5 +1,3 @@
-// t6ac8DG1Hig7X3Uc8v3D1mB8IzW0qvioY0J5ptln
-// AIzaSyConiWRnN46UCfMvBRUESD_MvTF2ucsnNE
 
 $(document).ready(function(){
 
